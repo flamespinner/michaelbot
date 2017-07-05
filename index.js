@@ -14,8 +14,7 @@ client.registry
     // Registers your custom command groups
     .registerGroups([
         ['dice, 'Dice Rolling'],
-        ['some', 'Some group'],
-        ['other', 'Some other group']
+        ['tba', 'The Blue Alliance']
     ])
     
 
