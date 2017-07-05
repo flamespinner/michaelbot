@@ -13,7 +13,7 @@ const bot = new commando.Client({
 client.registry
     // Registers your custom command groups
     .registerGroups([
-        ['fun', 'Fun commands'],
+        ['dice, 'Dice Rolling'],
         ['some', 'Some group'],
         ['other', 'Some other group']
     ])
