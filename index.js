@@ -7,7 +7,7 @@ const bot = new commando.Client({
 });
 
 /*bot.registry.registerGroup
-    ('dice', 'Dice Rolling'), ('tba', 'The Blue Alliance');*/
+    ('dice', 'Dice Rolling'),*/
 
 
 client.registry
