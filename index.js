@@ -13,6 +13,16 @@ bot.on("message", (message) => {
 
     if (!message.content.startsWith(config.prefix) || message.another.bot) return;
 
+<<<<<<< HEAD
+=======
+client.registry
+    // Registers your custom command groups
+    .registerGroups([
+        ['dice, 'Dice Rolling'],
+        ['tba', 'The Blue Alliance']
+    ])
+    
+>>>>>>> origin/master
 
   if (message.content.startsWith(config.prefix + "ping")) {
     message.channel.send("pong!");
