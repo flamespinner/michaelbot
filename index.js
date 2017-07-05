@@ -1,30 +1,26 @@
-const commando = require('discord.js-commando');
+const Discord = require("discord.js");
+const bot = new Discord.Client();
+const config = require("./config.json");
 
-const token = 'TOKENHERE';
-
-const bot = new commando.Client({
-    owner: '243174457336791041'
-});
-
-/*bot.registry.registerGroup
-    ('dice', 'Dice Rolling'),*/
-
-
-client.registry
-    // Registers your custom command groups
-    .registerGroups([
-        ['dice, 'Dice Rolling'],
-        ['some', 'Some group'],
-        ['other', 'Some other group']
-    ])
-    
-
-bot.registry.registerDefaults();
-bot.registry.registerCommandsIn(__dirname + "/commands");
+bot.login("config.token");
 
 bot.on("ready", () => {
+    console.log("I am ready!");
     bot.user.setGame("with Aryn 💑");
-    console.log("I am Ready!");
 });
 
-bot.login(token);
+bot.on("message", (message) => {
+
+    if (!message.content.startsWith(config.prefix) || message.another.bot) return;
+
+
+  if (message.content.startsWith(config.prefix + "ping")) {
+    message.channel.send("pong!");
+    console.log("Ping Pong!");
+  } else
+
+  if (message.content.startsWith(config.prefix + "coin")) {
+      message.channel.send("flip!");
+      console.log("Coin Flipped!");
+  }
+});
