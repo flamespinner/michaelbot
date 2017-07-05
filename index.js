@@ -1,6 +1,6 @@
 const commando = require('discord.js-commando');
 
-const token = 'MzMxNzg4NjA1NDg2MDA2Mjc0.DD07_w.iacOGTjc7OJqj9RBA8QX-Ylvn1E';
+const token = 'TOKENHERE';
 
 const bot = new commando.Client({
     owner: '243174457336791041'
