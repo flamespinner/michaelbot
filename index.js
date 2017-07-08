@@ -11,35 +11,14 @@ bot.on("ready", () => {
 });
 
 bot.on("guildMemberAdd", (member) => {
-	console.log(`New User "${member.user.username}" has joined "${member.guild.name}"`);
-	member.guild.defaultChannel.send(`Welcome ${member.user.username} to ${member.guild.name}`);
+    member.guild.defaultChannel.send(`Welcome ${member.user} to ${member.guild.name}`);
 });
-
-/*bot.on("guildMemberAdd", (member) => {
-    newUsers.set(member.id, member.user);
-    //console.log(member.id, member.user);
-    const guild = member.guild
-
-    console.log("NewUsers: " + newUsers);
-    console.log("member.guild: " + member.guild);
-    console.log("Welcome" + member.user + member.guild);
-
-    message.channel.send("Welcome" + member.user + member.guild);
-
-    /*(if (newUsers.size = 1) {
-        const userlist = newUsers.map(u => u.toString()).join(" ");
-        guild.defaultChannel.send("Welcome " + userlist);
-        newUsers.clear();
-    }*/
-//}); 
 
 bot.on("message", (message) => {
 
 	if (message.author.id == config.ownerID) {
-		console.log("This works");
 		if (message.content.startsWith("Jarvis")) {
 			message.channel.send("Yes Sir");
-			console.log("Yes Sir");
 		}
 	}
 
