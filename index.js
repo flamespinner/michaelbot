@@ -24,11 +24,10 @@ bot.on("message", (message) => {
 
 	if (!message.content.startsWith(config.prefix) || message.author.bot) return;
 
-
 	if (message.content.startsWith(config.prefix + "ping")) {
-		message.channel.sendMessage('Pong! Your ping is `' + `${bot.ping() - message.createdTimestamp}` + ' ms`');
-		console.log("Ping Pong!");
-	} else
+        message.channel.sendMessage(`Pong! Your ping is \`${bot.ping}\` ms`);
+        console.log("Ping Pong!");
+    } else
 
 	if (message.content.startsWith(config.prefix + "coin")) {
 		message.channel.send("flip!");
