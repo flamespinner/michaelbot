@@ -2,8 +2,11 @@ const Discord = require("discord.js");
 const bot = new Discord.Client();
 const config = require("./config.json");
 const newUsers = new Discord.Collection();
+const fs = require("fs");
+
 
 bot.login(config.token);
+
 
 bot.on("ready", () => {
 	console.log("I am ready!");
@@ -25,7 +28,7 @@ bot.on("message", (message) => {
 	if (!message.content.startsWith(config.prefix) || message.author.bot) return;
 
 	if (message.content.startsWith(config.prefix + "ping")) {
-        message.channel.send(`Pong! Your ping is \`${bot.ping}\` ms`);
+        message.channel.send(`Pong! Your ping is \`${Math.round(bot.ping)}\` ms`);
         console.log("Ping Pong!");
     } else
 
@@ -38,6 +41,4 @@ bot.on("message", (message) => {
 		message.channel.send("😇 RIP 😇");
 		console.log("someone died");
 	}
-	
-	//if(message.author.id !== config.ownerID) return;
 });
