@@ -7,7 +7,7 @@ bot.login(config.token);
 
 bot.on("ready", () => {
 	console.log("I am ready!");
-	bot.user.setGame("with Aryn ;)");
+	bot.user.setGame("I am gay");
 });
 
 bot.on("guildMemberAdd", (member) => {
@@ -26,7 +26,7 @@ bot.on("message", (message) => {
 
 
 	if (message.content.startsWith(config.prefix + "ping")) {
-		message.channel.send("pong!");
+		message.channel.sendMessage('Pong! Your ping is `' + `${bot.ping() - message.createdTimestamp}` + ' ms`');
 		console.log("Ping Pong!");
 	} else
 
@@ -38,6 +38,7 @@ bot.on("message", (message) => {
 	if (message.content.toLowerCase().startsWith(config.prefix + "rip")) {
 		message.channel.send("😇 RIP 😇");
 		console.log("someone died");
-    }
+	}
+	
 	//if(message.author.id !== config.ownerID) return;
 });
