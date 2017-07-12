@@ -36,7 +36,7 @@ bot.aliases = new discord.Collection();
         delete require.cache[require.resolve(`./events/${file}`)];
     });
 
-    bot.login(config.token);
+    bot.login(bot.config.token);
 
 }());
 
