@@ -1,13 +1,14 @@
 module.exports = (bot, message) => {
     if (message.author.bot) return;
-    if (message.content.startsWith(prefix + "ping") || message.content.startsWith(prefix + "Ping") {
+    /*if (message.content.startsWith(prefix + "ping") || message.content.startsWith(prefix + "Ping") {
       let args = message.content.split(" ").slice(1);
       let joke = args.join(" ");
       message.channel.send(`Hi **${joke}**, I'm arynbot! :heart:`);
       bot.log("log", `${message.guild.name}/#${message.channel.name}: ${message.author.username} (${message.author.id}) made a dad joke: ${joke}`, "DAD");
-    }
+    }*/
+    //that was mostly the code necessary for the bot to make dad jokes tbh, its not necessary
     
-    mif (message.content.indexOf(bot.config.prefix) !== 0) return;
+    if (message.content.indexOf(bot.config.prefix) !== 0) return;
     const args = message.content.split(/\s+/g);
     const command = args.shift().slice(bot.config.prefix.length).toLowerCase();
     const cmd = bot.commands.get(command) || bot.commands.get(bot.aliases.get(command));

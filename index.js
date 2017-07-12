@@ -1,16 +1,14 @@
 const discord = require("discord.js");
 const { promisify } = require('util');
 const readdir = promisify(require("fs").readdir);
-const config = require("./config.json");
 const bot = new discord.Client();
-
+bot.config = require("./config.json");
 require("./modules/functions.js")(bot);
 
 bot.commands = new discord.Collection();
 bot.aliases = new discord.Collection();
-const newUsers = new discord.Collection();
-
-
+//const newUsers = new discord.Collection();
+//idk what that line is for, you can maybe add it back later
 
 (async function() {
 
