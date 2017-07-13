@@ -1,11 +1,7 @@
-if(msg.author.id != require('./config.json').ownerID) return msg.reply("you are not allowed to do this!")
-const child_process = require('child_process');
-module.exports = {
-    name: 'update',
-    type: 'owner'
-    usage: 'update',
-    permission: 6,
-    help: 'Pulls new changes from Github and restarts.',
+//if(msg.author.id != require('./config.json').ownerID) return msg.reply("you are not allowed to do this!")
+exports.run = {
+   const child_process = require('child_process');
+
     main: function (bot, msg) {
         msg.channel.send("Updating...").then(function (e) {
             var evaled = eval("child_process.execSync('git pull origin').toString()");
@@ -23,3 +19,16 @@ module.exports = {
         })
     }
 }
+
+exports.conf = {
+    enabled: true,
+    guildONly: false,
+    permLevel: 6
+};
+
+exports.help = {
+    name: 'update',
+    //type: 'owner'
+    usage: 'update',
+    description: 'Pulls new changes from Github and restarts.'
+};
