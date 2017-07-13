@@ -1,3 +1,4 @@
+if(msg.author.id != require('../config.json').owner) return msg.reply("you are not allowed to do this!")
 const child_process = require('child_process');
 module.exports = {
     name: 'update',
