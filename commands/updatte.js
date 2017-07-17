@@ -21,7 +21,7 @@ exports.conf = {
 };
 
 exports.help = {
-    name: 'update',
-    usage: 'update',
+    name: 'updatte',
+    usage: 'updatte',
     description: 'Pulls new changes from Github and restarts.'
 };
