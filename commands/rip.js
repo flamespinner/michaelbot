@@ -5,7 +5,7 @@ exports.run = (bot, message, args, level) => {
 exports.conf = {
     enabled: true,
     guildOnly: false,
-    aliases: ['github', 'gh', 'repo'],
+    aliases: ['rip', 'RIP'],
     permLevel: 0
 };
 
