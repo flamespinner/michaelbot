@@ -8,7 +8,7 @@ exports.run = (bot, msg, args) => {
                 e.channel.send("There was nothing to update!");
             } else {
                 e.channel.send("New code successfully pulled!\nRestarting...")
-                process.exit(0)
+                process.exit();
             }
         })
 };
