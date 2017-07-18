@@ -1,5 +1,5 @@
 exports.run = (bot, message, params, level) => {
-        message.author.send(" ''' " + "test" "" ''' ")
+        message.author.send(" ''' " + "test" + " ''' ")
         code: 'asciidoc'
 };
 
