@@ -3,7 +3,6 @@ exports.run = (bot, msg, args) => {
     if(msg.author.id != require('../config.json').ownerID) return msg.reply("you are not allowed to do this!") 
         msg.channel.send("Updating...").then(e => {
             var update = child_process.execSync('git pull origin').toString()
-            console.log("hello");
             e.channel.send("```" + update + "```")
             if (update.indexOf("Already up-to-date.") > -1) {
                 e.channel.send("There was nothing to update!");
