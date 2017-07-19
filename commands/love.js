@@ -41,4 +41,3 @@ exports.help = {
     description:  'Spread the love!',
     usage: 'love'
 };
-Contact GitHub API Training Shop Blog About
