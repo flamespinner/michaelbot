@@ -13,7 +13,6 @@ exports.run = (bot, msg, args) => {
         msg.channel.send("Ooming!");
         msg.channel.send("Hang on a second.");
         msg.channel.send("Hello?");
-
         msg.channel.send("- Barry?");
         msg.channel.send("- Adam?");
         msg.channel.send("- Oan you believe this is happening?");
@@ -49,190 +48,59 @@ exports.run = (bot, msg, args) => {
         msg.channel.send("Don't waste it on a squirrel.");
         msg.channel.send("Such a hothead.");
         msg.channel.send("I guess he could have just gotten out of the way.");
+        msg.channel.send("I love this incorporating an amusement park into our day.");
+        msg.channel.send("That's why we don't need vacations.");
+        msg.channel.send("Boy, quite a bit of pomp... under the circumstances.");
+        msg.channel.send("- Well, Adam, today we are men.");
+        msg.channel.send("- We are!");
+        msg.channel.send("- Bee-men.");
+        msg.channel.send("- Amen!");
+        msg.channel.send("Hallelujah!");
+        msg.channel.send("Students, faculty, distinguished bees,");
+        msg.channel.send("please welcome Dean Buzzwell.");
+        msg.channel.send("Welcome, New Hive Oity graduating class of...");
+        msg.channel.send("...9:15.");
+        msg.channel.send("That concludes our ceremonies.");
+        msg.channel.send("And begins your career at Honex Industries!");
+        msg.channel.send("Will we pick ourjob today?");
+        msg.channel.send("I heard it's just orientation.");
+        msg.channel.send("Heads up! Here we go.");
+        msg.channel.send("Keep your hands and antennas inside the tram at all times.");
+        msg.channel.send("- Wonder what it'll be like?");
+        msg.channel.send("- A little scary.");
+        msg.channel.send("Welcome to Honex, a division of Honesco and a part of the Hexagon Group.");
+        msg.channel.send("This is it!");
+        msg.channel.send("Wow.");
+        msg.channel.send("Wow.");
+        msg.channel.send("We know that you, as a bee, have worked your whole life to get to the point where you can work for your whole life.");
+        msg.channel.send("Honey begins when our valiant Pollen");
+        msg.channel.send("Jocks bring the nectar to the hive.");
+        msg.channel.send("Our top-secret formula is automatically color-corrected, scent-adjusted and bubble-contoured into this soothing sweet syrup with its distinctive golden glow you know as...");
+        msg.channel.send("Honey!");
+        msg.channel.send("- That girl was hot.");
+        msg.channel.send("- She's my cousin!");
+        msg.channel.send("- She is?");
+        msg.channel.send("- Yes, we're all cousins.");
+        msg.channel.send("- Right. You're right.");
+        msg.channel.send("- At Honex, we constantly strive to improve every aspect of bee existence.");
+        msg.channel.send("These bees are stress-testing a new helmet technology.");
+        msg.channel.send("- What do you think he makes?");
+        msg.channel.send("- Not enough.");
+        msg.channel.send("Here we have our latest advancement, the Krelman.");
+        msg.channel.send("- What does that do?");
+        msg.channel.send("- Oatches that little strand of honey that hangs after you pour it. Saves us millions.");
+        msg.channel.send("Oan anyone work on the Krelman?");
+        msg.channel.send("Of course. Most bee jobs are small ones. But bees know that every small job, if it's done well, means a lot.");
+        msg.channel.send("But choose carefully because you'll stay in the job you pick for the rest of your life.");
+        msg.channel.send("The same job the rest of your life? I didn't know that.");
+        msg.channel.send("What's the difference?"); 
+        msg.channel.send("You'll be happy to know that bees, as a species, haven't had one day off in 27 million years.");
+        msg.channel.send("So you'll just work us to death?");
+        msg.channel.send("We'll sure try.");
+        msg.channel.send("Wow! That blew my mind!");
 
 
 /*
-  
-I love this incorporating
-an amusement park into our day.
-
-  
-That's why we don't need vacations.
-
-  
-Boy, quite a bit of pomp...
-under the circumstances.
-
-  
-- Well, Adam, today we are men.
-- We are!
-
-  
-- Bee-men.
-- Amen!
-
-  
-Hallelujah!
-
-  
-Students, faculty, distinguished bees,
-
-  
-please welcome Dean Buzzwell.
-
-  
-Welcome, New Hive Oity
-graduating class of...
-
-  
-...9:15.
-
-  
-That concludes our ceremonies.
-
-  
-And begins your career
-at Honex Industries!
-
-  
-Will we pick ourjob today?
-
-  
-I heard it's just orientation.
-
-  
-Heads up! Here we go.
-
-  
-Keep your hands and antennas
-inside the tram at all times.
-
-  
-- Wonder what it'll be like?
-- A little scary.
-
-  
-Welcome to Honex,
-a division of Honesco
-
-  
-and a part of the Hexagon Group.
-
-  
-This is it!
-
-  
-Wow.
-
-  
-Wow.
-
-  
-We know that you, as a bee,
-have worked your whole life
-
-  
-to get to the point where you
-can work for your whole life.
-
-  
-Honey begins when our valiant Pollen
-Jocks bring the nectar to the hive.
-
-  
-Our top-secret formula
-
-  
-is automatically color-corrected,
-scent-adjusted and bubble-contoured
-
-  
-into this soothing sweet syrup
-
-  
-with its distinctive
-golden glow you know as...
-
-  
-Honey!
-
-  
-- That girl was hot.
-- She's my cousin!
-
-  
-- She is?
-- Yes, we're all cousins.
-
-  
-- Right. You're right.
-- At Honex, we constantly strive
-
-  
-to improve every aspect
-of bee existence.
-
-  
-These bees are stress-testing
-a new helmet technology.
-
-  
-- What do you think he makes?
-- Not enough.
-
-  
-Here we have our latest advancement,
-the Krelman.
-
-  
-- What does that do?
-- Oatches that little strand of honey
-
-  
-that hangs after you pour it.
-Saves us millions.
-
-  
-Oan anyone work on the Krelman?
-
-  
-Of course. Most bee jobs are
-small ones. But bees know
-
-  
-that every small job,
-if it's done well, means a lot.
-
-  
-But choose carefully
-
-  
-because you'll stay in the job
-you pick for the rest of your life.
-
-  
-The same job the rest of your life?
-I didn't know that.
-
-  
-What's the difference?
-
-  
-You'll be happy to know that bees,
-as a species, haven't had one day off
-
-  
-in 27 million years.
-
-  
-So you'll just work us to death?
-
-  
-We'll sure try.
-
-  
-Wow! That blew my mind!
-
   
 "What's the difference?"
 How can you say that?
