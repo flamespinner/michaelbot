@@ -4,7 +4,7 @@ exports.run = (bot, msg, args) => {
 	for(let i = 0; i < bee.length; i++) {
 		setTimeout(function() {
 			msg.channel.send(bee[i]);
-		}, (i+1) 500);
+		}, (i+1) * 500);
 	}
 };
 
