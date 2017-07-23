@@ -7,12 +7,12 @@ exports.run = (bot, message, args, level) => {
 exports.conf = {
     enabled: true,
     guildOnly: false,
-    aliases: ['rip', 'RIP'],
+    aliases: ['spam', 'Spam'],
     permLevel: 0
 };
 
 exports.help = {
-    name: 'rip',
-    description: 'rip',
-    usage: 'rip'
+    name: 'Spam',
+    description: 'Spam',
+    usage: 'Spam'
 };
