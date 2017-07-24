@@ -1,4 +1,3 @@
-
 exports.run = (bot, message, params, level) => {
     const Discord = require('discord.js');
     if (!params[0]) {
