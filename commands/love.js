@@ -30,8 +30,8 @@ exports.run = (bot, message, args, level) => {
         message.reply(`${list[Math.floor(Math.random()*list.length)]}`);
     } else {
         let loved = message.mentions.users.array()[0];
-        message.channel.send(`**${loved.username}**, ${list[Math.floor(Math.random()*list.length)]}`)
-        message.channel.send("SPAM SPAM SPAM SPAM SPAM SPAM SPAM SPAM", {
+        //message.channel.send(`**${loved.username}**, ${list[Math.floor(Math.random()*list.length)]}, `)
+        message.channel.send(`**${loved.username}**, ${list[Math.floor(Math.random()*list.length)]},` {
             file: "https://cdn.discordapp.com/attachments/263501441690238976/337810432108658691/089811d7a2e619cb735aa37a52b19262.gif" // Or replace with FileOptions object
         });
     };
