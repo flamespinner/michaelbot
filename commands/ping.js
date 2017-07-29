@@ -8,7 +8,7 @@ exports.run = async(bot, message, args, level) => {
 exports.conf = {
     enabled: true,
     guildOnly: false,
-    aliases: [Ping],
+    aliases: ['Ping'],
     permLevel: 0
 };
 

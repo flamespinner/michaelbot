@@ -39,7 +39,7 @@ exports.run = (bot, message, args, level) => {
 exports.conf = {
     enabled: true,
     guildOnly: false,
-    aliases: [Love],
+    aliases: ['Love'],
     permLevel: 0
 };
 
