@@ -1,4 +1,35 @@
-exports.run = (bot, message, params, level) => {
+exports.run = async(bot, message, args, level) => {
+    const Discord = require("discord.js");    
+    var banee = message.mentions.users.array()[0];
+    var banned = message.guild.members.get(banee.id);
+    if (args.length == 1) {
+        var reason = "Not specified";
+    } else {
+        var reason = args.slice(1).join(" ");
+    };    
+    banned.ban(reason);
+    var ban = new Discord.RichEmbed();
+        ban.setTitle('User was banned.')
+        .addField('User', banee, true)
+        .addField('Banned by', message.author, true)
+        .addField('Reason', reason)
+        .setFooter("BANNED")
+        .setTimestamp()
+        .setColor('#E53935')
+    message.channel.send({embed: ban})
+};
+exports.conf = {
+    enabled: true,
+    guildOnly: false,
+    aliases: [],
+    permLevel: 10
+};
+exports.help = {
+    name: 'ban',
+    description: 'Bans a member.',
+    usage: 'ban @<member to be banned> <reason for banning>'
+};
+/*exports.run = (bot, message, params, level) => {
     const Discord = require('discord.js');
     if (!params[0]) {
         const myCommands = bot.commands.filter(c => c.conf.permLevel <= level);
@@ -38,4 +69,4 @@ exports.help = {
     name: 'Help',
     description: 'Spam',
     usage: 'Help'
-};
+};*/
