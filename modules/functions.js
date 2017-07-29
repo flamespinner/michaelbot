@@ -1,4 +1,4 @@
-IDmodule.exports = (bot) => {
+module.exports = (bot) => {
     bot.permLevel = message => {
         let permlvl = 0;
         if (message.author.id === bot.config.ownerID) return 10;
@@ -15,7 +15,7 @@ IDmodule.exports = (bot) => {
         } catch (e) {
             console.warn("adminRoleName not found. Skipping Admin (level 3) check");
         }
-        if (message.author.id === message.guild.ownerID) permlvl = 4;
+        if (message.author.id === message.guild.owner.id) permlvl = 4;
         return permlvl;
     };
     bot.log = (type, msg, title) => {
