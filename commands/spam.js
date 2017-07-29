@@ -7,12 +7,12 @@ exports.run = (bot, message, args, level) => {
 exports.conf = {
     enabled: true,
     guildOnly: false,
-    aliases: ['spam', 'Spam'],
+    aliases: ['spam'],
     permLevel: 0
 };
 
 exports.help = {
     name: 'Spam',
-    description: 'Spam',
-    usage: 'Spam'
+    description: 'mmmmmmmm ssspppaaammmmm',
+    usage: '+Spam'
 };

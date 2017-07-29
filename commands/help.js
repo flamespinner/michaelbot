@@ -30,12 +30,12 @@ exports.run = (bot, message, params, level) => {
 exports.conf = {
     enabled: true,
     guildOnly: false,
-    aliases: ['help', 'Help'],
+    aliases: ['help'],
     permLevel: 0
 };
 
 exports.help = {
     name: 'Help',
-    description: 'Spam',
-    usage: 'Help'
+    description: 'Prints out help command options',
+    usage: '+Help'
 };

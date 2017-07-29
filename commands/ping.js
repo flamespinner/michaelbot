@@ -8,12 +8,12 @@ exports.run = async(bot, message, args, level) => {
 exports.conf = {
     enabled: true,
     guildOnly: false,
-    aliases: [],
+    aliases: [Ping],
     permLevel: 0
 };
 
 exports.help = {
     name: 'ping',
     description: 'Simple test to see if I am responding!',
-    usage: 'ping'
+    usage: '+ping'
 };

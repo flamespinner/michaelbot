@@ -5,12 +5,12 @@ exports.run = async(bot, message, args, level) => {
 exports.conf = {
     enabled: true,
     guildOnly: false,
-    aliases: [],
+    aliases: [Flip],
     permLevel: 0
 };
 
 exports.help = {
     name: 'flip',
-    description: 'Coin Flip Beta',
-    usage: 'flip'
+    description: 'Flip a coin (Beta)',
+    usage: '+flip'
 };

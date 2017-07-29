@@ -14,12 +14,12 @@ exports.run = async(bot, message, args, level) => {
 exports.conf = {
     enabled: true,
     guildOnly: false,
-    aliases: [],
+    aliases: [Eval],
     permLevel: 10
 };
 
 exports.help = {
     name: 'eval',
     description: 'Evaluates arbitrary javascript.',
-    usage: 'eval <code>'
+    usage: '+eval <code>'
 };
