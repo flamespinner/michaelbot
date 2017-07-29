@@ -12,5 +12,5 @@ exports.conf = {
 exports.help = {
     name: 'rip',
     description: 'rip',
-    usage: '+rip'
+    usage: 'rip'
 };
