@@ -1,49 +1,43 @@
-exports.run = (bot, message, args, level) => {
-    const Discord = require('discord.js');
-    var colors = Array("#FF80AB", "#FF4081", "#F50057", "#EF5350", "#E53935", "#C62828", "#FFAB40", "#FF9100", "#FF6D00", "#FFD740", "#FFC400", "#FFAB00", "#81C784", "#4CAF50", "#388E3C", "#2196F3", "#1976D2", "#0D47A1", "#7986CB", "#3F51B5", "#303F9F", "#B39DDB", "#7E57C2", "#5E35B1");
-    if (!args[0]) {
+exports.run = (bot, message, params, level) => {
+    message.channel.send("hi");
+    if (!params[0]) {
         const myCommands = bot.commands.filter(c => c.conf.permLevel <= level);
-        var helpbox = new Discord.RichEmbed();
-        helpbox.setTitle("Command List")
-            .setDescription(`Use ${bot.config.prefix}help <commandname> for details`)
-            .setColor(colors[Math.floor(Math.random() * colors.length)])
-        myCommands.forEach(c => {
-            helpbox.addField(c.help.name, c.help.description)
+        const commandNames = myCommands.keyArray();
+        const longest = commandNames.reduce((long, str) => Math.max(long, str.length), 0);
+        let currentCategory = "";
+        let output = `= Command List =\n\n[Use ${bot.config.prefix}help <commandname> for details]\n`;
+        const sorted = myCommands.sort((p, c) => p.help.category > c.help.category);
+        sorted.forEach(c => {
+            if (currentCategory !== c.help.category) {
+                output += `\n== ${c.help.category}\n`;
+                currentCategory = c.help.category;
+            }
+            output += `${bot.config.prefix}${c.help.name}${' '.repeat(longest - c.help.name.length)} :: ${c.help.description}\n`;
         });
-        message.channel.send({
-            embed: helpbox
+        message.channel.send(output, {
+            code: 'asciidoc'
         });
-    } else {
-        let command = '';
-        if (bot.commands.has(args[0])) {
-            command = bot.commands.get(args[0]);
-        } else if (bot.aliases.has(args[0])) {
-            command = bot.commands.get(bot.aliases.get(args[0]));
-        };
-        if (!command) return message.reply(`That command \`${args[0]}\` doesn't seem to exist, nor is it an alias. Try again!`);
-        var helpCommand = new Discord.RichEmbed();
-        helpCommand.setTitle(command.help.name)
-            .addField('Description', `${command.help.description}`)
-            .addField('Usage', `${bot.config.prefix}${command.help.usage}`)
-            .setColor(colors[Math.floor(Math.random() * colors.length)])
-        if (command.conf.aliases != "") {
-            helpCommand.addField('Aliases', `${command.conf.aliases.join(', ')}`)
+    }/* else {
+        let command = params[0];
+        if (bot.commands.has(command)) {
+            command = bot.commands.get(command);
+            message.channel.send(`${command.help.name}\n${command.help.description}\nusage   :: ${bot.config.prefix}${command.help.usage}\naliases :: ${command.conf.aliases.join(', ')}`, {
+                code: 'asciidoc'
+            });
         }
-        message.channel.send({
-            embed: helpCommand
-        });
-    };
+    }*/
 };
 exports.conf = {
-    enabled: true,
-    guildOnly: false,
-    aliases: ['h', 'halp'],
-    permLevel: 0
+    enabled: true
+    , guildOnly: false
+    , aliases: ['h', 'halp']
+    , permLevel: 0
 };
 exports.help = {
-    name: 'help',
-    description: 'Displays all the commands avaliable for your permission level',
-    usage: 'help <command [optional]>'
+    name: 'help'
+    , category: 'Utilities'
+    , description: 'Displays all the commands avaliable for your permission level'
+    , usage: 'help <command [optional]>'
 };
 
 /*exports.run = (bot, message, params, level) => {
