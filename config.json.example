@@ -3,5 +3,6 @@
   "prefix": "+",
   "ownerID": "Insert your ID of the bot owner here",
   "adminRoleName": "admin",
-  "modRoleName": "mod"
+  "modRoleName": "mod",
+  "twitchID": "idhere"
 }
