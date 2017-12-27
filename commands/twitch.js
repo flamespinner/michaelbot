@@ -1,5 +1,5 @@
 exports.run = (bot, message, args, level) => {
-    message.channel.send("http://twitch.tv/Agent_Flame");
+    message.channel.send(" `Bot code is avalable here! Currently on V1.5` http://github.com/flamespinner/michaelbot");
 }
 
 exports.conf = {
@@ -10,7 +10,7 @@ exports.conf = {
 };
 
 exports.help = {
-    name: 'twitch',
-    description: 'Provides a link to Agent Flames Twitch',
+    name: 'Twitch',
+    description: 'Provides a link to michaelbots GitHub repository!',
     usage: 'twitch'
 };
