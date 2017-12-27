@@ -31,5 +31,5 @@ exports.conf = {
 exports.help = {
 	name: 'marshmallow',
 	description: 'Gives Michaelbot a marshmallow!',
-	usage: 'marshmallow'
+	usage: '+marshmallow'
 };

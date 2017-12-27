@@ -15,5 +15,5 @@ exports.conf = {
 exports.help = {
     name: 'ping',
     description: 'Simple test to see if I am responding!',
-    usage: 'ping'
+    usage: '+ping'
 };

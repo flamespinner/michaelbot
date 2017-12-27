@@ -12,5 +12,5 @@ exports.conf = {
 exports.help = {
     name: 'flip',
     description: 'Flip a coin (Beta)',
-    usage: 'flip'
+    usage: '+flip'
 };

@@ -37,5 +37,5 @@ exports.conf = {
 exports.help = {
     name: 'Help',
     description: 'Prints out help command options',
-    usage: 'Help'
+    usage: '+Help'
 };

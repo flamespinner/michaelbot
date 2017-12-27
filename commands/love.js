@@ -46,5 +46,5 @@ exports.conf = {
 exports.help = {
     name: 'love',
     description: 'Spread the love!',
-    usage: 'love'
+    usage: '+love'
 };

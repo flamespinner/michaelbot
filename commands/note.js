@@ -22,6 +22,6 @@
 
 exports.help = {
 	name: 'note',
-	usage: 'note',
+	usage: '+note',
 	description: 'make notes'
 };

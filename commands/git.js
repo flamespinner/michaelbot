@@ -12,5 +12,5 @@ exports.conf = {
 exports.help = {
     name: 'git',
     description: 'Provides a link to michaelbots GitHub repository!',
-    usage: 'git'
+    usage: '+git'
 };
