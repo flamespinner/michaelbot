@@ -14,7 +14,7 @@ exports.run = async(bot, message, args, level) => {
 exports.conf = {
     enabled: true,
     guildOnly: false,
-    aliases: ['Eval'],
+    aliases: ['Eval', 'test', 'Test'],
     permLevel: 10
 };
 
