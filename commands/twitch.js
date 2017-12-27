@@ -11,6 +11,6 @@ exports.conf = {
 
 exports.help = {
     name: 'twitch',
-    description: 'Provides a link to Agent Flame's Twitch',
+    description: 'Provides a link to Agent Flames Twitch',
     usage: 'twitch'
 };
