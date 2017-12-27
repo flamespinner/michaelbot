@@ -15,5 +15,5 @@ exports.run = async(bot, message, args, level) => {
     exports.help = {
         name: 'live',
         description: 'Am I Live?',
-        usage: '+live'
+        usage: 'live'
     };

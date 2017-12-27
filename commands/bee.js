@@ -17,6 +17,6 @@ exports.conf = {
 
 exports.help = {
 	name: 'bee',
-	usage: '+bee',
+	usage: 'bee',
 	description: 'Prints out the whole Bee Move Script...line by line...'
 };

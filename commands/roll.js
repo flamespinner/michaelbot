@@ -20,5 +20,5 @@ exports.conf = {
 exports.help = {
     name: 'roll',
     description: 'Rolls a die of a side number up to 9999',
-    usage: '+roll'
+    usage: 'roll'
 };
