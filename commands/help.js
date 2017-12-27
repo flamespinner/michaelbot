@@ -17,6 +17,7 @@ exports.run = (bot, message, params, level) => {
             command = bot.commands.get(command);
             var helpCommand = new Discord.RichEmbed();
             helpCommand.setTitle(command.help.name)
+            .addField(' ')
             .addField('Description', `${command.help.description}`)
             .addField('Usage', `${bot.config.prefix}${command.help.usage}`)
             .setColor([Math.floor(Math.random()*256),Math.floor(Math.random()*256),Math.floor(Math.random()*256)])
